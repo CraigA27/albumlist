@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+    <title>App</title>
+</head>
+<body>
+    <form id="new-album-form">
+        <div id="form-wrapper">
+            <div class ="form-item">
+                <label for="title" class="primary">Title:</label>
+                <input type="text" id="title" required>
+            </div>
+
+            <div class="form-item">
+                <label for="artist" class="primary">Artist:</label>
+                <input type="text" id="artist" required>
+            </div>
+
+            <div class="form-item">
+                <label for="genre" class="primary">Genre:</label>
+                <select id="genre">
+                <option value="" disabled selected></option>
+                <option value="Rock">Rock</option>
+                <option value="Electronic">Electronic</option>
+                <option value="Classical">Classical</option>
+                </select>   
+            </div>
+            
+            <div class="form-item">
+                <label for="format" class="primary">Format:
+                <input type="radio" id="physical" name="format" value="Physical">
+                <label for="physical">Physical</label>
+                <input type="radio" id="digital" name="format" value="Digital">
+                <label for="digital">Digital</label></label>
+            </div>
+        </div>
+        <input type="submit" value="save">
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Album List</h1>
+    <ul id="album-list"></ul>
+</body>
+</html>
